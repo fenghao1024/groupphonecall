@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="red">#ffe14812</color>
+    <color name="complete">#ff9fbe01</color>
+    <color name="gray">#ff999999</color>
+    <color name="white">#ffffffff</color>
+    <color name="list_item_pressed">#FFEAEA</color>
+    <color name="list_item_normal">#FFF4F4</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#FF000000</color>
+    <color name="group_count_color">#FF781818</color>
+    <color name="group_child_item_selected_color">#fffef4f3</color>
+    <color name="dialog_bg_color">#77000000</color>
+    <color name="bright_foreground_dark">#ffffff</color>
+    <color name="search_bg_color">#FFF3E8E7</color>
+</resources>

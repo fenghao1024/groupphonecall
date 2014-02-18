@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/top">
+
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sms_bianji" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="通知"
+            android:textColor="#ffffff"
+            android:textSize="23sp" />
+        
+          <ImageView
+            android:id="@+id/look_new_message_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/sms_newmessage" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/network_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/network_bg" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/network_tips_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="12sp" 
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:text="您手机当前网络不可用，影响有效通知"/>
+
+        <ImageView
+            android:id="@+id/network_tips_image"
+            android:layout_width="70dp"
+            android:layout_height="36dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:src="@drawable/network_tips_image_bg" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/Lv_look"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@null"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/no_notification_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/no_nofitication_tips" />
+
+        <ImageView
+            android:id="@+id/no_nofitication_tips_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/no_notification_tip_image_bg"
+            android:clickable="true" />
+    </LinearLayout>
+
+</LinearLayout>

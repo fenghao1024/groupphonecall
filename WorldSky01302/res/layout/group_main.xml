@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bj" >
+
+    <ExpandableListView
+        android:id="@+id/group_list_expandablelistview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:childDivider="@drawable/lv_group_divider"
+        android:divider="@drawable/lv_group_divider"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/sys_fasong_bj" >
+
+        <TextView
+            android:id="@+id/group_list_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selected_confirm_bg"
+            android:padding="0dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="确  定"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

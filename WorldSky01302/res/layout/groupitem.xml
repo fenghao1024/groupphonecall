@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+          android:layout_centerVertical="true"
+        >
+
+    <CheckBox
+        android:id="@+id/chk_GroupSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userName"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/Tv_GroupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="20dp"
+        android:text="张敏"
+        android:textColor="#111111"
+        android:textSize="20dp"
+        android:textStyle="bold" >
+    </TextView>
+</LinearLayout>
+    <TextView
+        android:id="@+id/Tv_GroupCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:text="(120)"
+        android:textColor="#111111"
+        android:textSize="20dp"
+        android:textStyle="bold" >
+    </TextView>
+
+</RelativeLayout>

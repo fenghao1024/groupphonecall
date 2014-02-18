@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_group_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/group_title_bg" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="编辑群组"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+        <ImageView
+            android:id="@+id/edit_group_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:background="@drawable/sms_message_thread_back_bg"
+            android:clickable="true" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/new_group_layout_title_bg"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edit_group_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/new_group_edit_bg"
+            android:gravity="top"
+            android:hint="群组名称A"
+            android:inputType="none"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/group_parent_pressed" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/new_group_arrow_down" />
+
+                <TextView
+                    android:id="@+id/edit_group_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/edit_group_contacts"
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:cacheColorHint="@null"
+                android:listSelector="@color/transparent"
+                android:divider="#E0E0E0"
+                android:dividerHeight="1dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/group_parent_pressed" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/new_group_arrow_down" />
+
+                <TextView
+                    android:id="@+id/edit_all_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/edit_group_all_contacts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@color/transparent"
+                android:cacheColorHint="@null"
+                android:divider="#E0E0E0"
+                android:dividerHeight="1dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/edit_group_tvLetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/letter_tv_bg"
+            android:gravity="center"
+            android:maxWidth="70dip"
+            android:minWidth="70dip"
+            android:padding="10dip"
+            android:textColor="@color/group_count_color"
+            android:textSize="52sp" />
+
+        <com.eteng.world.MyLetterView
+            android:id="@+id/myGroupView"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right" >
+        </com.eteng.world.MyLetterView>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/new_group_layout_title_bg" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/edit_group_save"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:background="@drawable/new_group_save_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/edit_group_cancel"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/new_group_cancel_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/meeting_bg"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal" >
+<!-- 
+        <ImageView
+            android:id="@+id/toast_image"
+            android:layout_width="55sp"
+            android:layout_height="55sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/icon_256" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/toast_text"
+                android:gravity="center" 
+                android:layout_width="170dp"
+                android:layout_height="41dp"
+                android:layout_alignTop="@id/toast_image"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/toast_image"
+                android:text="会议列表"
+                android:textColor="#33b9fa"
+                android:textSize="28sp" />
+        </LinearLayout>-->
+    </LinearLayout>
+    
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        >
+        
+
+
+                <ListView
+                    android:id="@+id/meeting_status_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:dividerHeight="5dp"
+                    android:divider="#00000000"
+                    android:cacheColorHint="#00000000" 
+                     >
+                </ListView>
+                
+
+        
+    	</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/hang_up_button"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            
+            android:layout_gravity="center" 
+            android:background="@drawable/hangup_button_click" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sms_send_group_layout_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/group_bj"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_bar_black" >
+
+            <ImageView
+                android:id="@+id/sms_send_group_back"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/setting_icon"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="多方通话"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/sms_send_group_add"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/sms_group_add_bg"
+                android:clickable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+			android:background="@drawable/contact_gv_bg"            
+            android:orientation="vertical"
+            android:onClick="contact_grid_on_click"
+            >
+
+            <GridView
+                android:id="@+id/sms_gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"
+                android:verticalSpacing="5dp" >
+            </GridView>
+
+            <TextView
+                android:id="@+id/gv_empty_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="你还没有选择任何被通知人"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp" >
+
+                <ImageView
+                    android:id="@+id/contact_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/contact_tips_bg" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/contacter"
+                        android:textColor="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/sms_contacter_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="(0)"
+                        android:textColor="@color/group_count_color" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/contact_group_ll_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/contacter_group"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/sms_contacter_group_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/group_count_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/contact_group_ll_bg"
+            android:orientation="vertical" >
+
+            <ExpandableListView
+                android:id="@+id/lv_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:cacheColorHint="@null"
+                android:childDivider="@drawable/lv_group_divider"
+                android:divider="@drawable/lv_group_divider"
+                android:dividerHeight="1dp"
+                android:groupIndicator="@null"
+                android:listSelector="@color/transparent" />
+
+            <ImageView
+                android:id="@+id/contact_group_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:background="@drawable/contact_tips_bg" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/sms_no_group_img"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:background="@drawable/no_group_bg"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sms_send_bj"
+        android:padding="10dp" 
+        android:gravity="center_horizontal">
+        
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="41dp"
+            android:background="@drawable/call_button_click"
+            android:onClick="call_click" />
+
+        <!-- 
+        <EditText
+            android:id="@+id/sms_group_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/sms_edt_bg"
+            android:gravity="top"
+            android:hint="@string/sms_edittext_hint"
+            android:inputType="none"
+            android:maxLines="6"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:id="@+id/sms_group_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="发送\n(0/0)"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:background="@drawable/sms_send_bg"
+            android:clickable="true" />
+            
+            
+             -->
+    </LinearLayout>
+
+</LinearLayout>

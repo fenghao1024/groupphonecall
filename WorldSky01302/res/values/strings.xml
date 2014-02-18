@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">多方通话！</string>
+    <string name="contacter">收件人</string>
+    <string name="contacter_group">群组</string>
+    <string name="sms_edittext_hint">在这里输入信息</string>
+    <string name="no_select_toast_item_str">联系人已选择!</string>
+    <string name="no_select_toast_group_str">群组联系人有重复，已自动合并！</string>
+    <string name="sms_about">        咦？这位朋友，你居然来到这里，你很有慧根哦。\n\n        我们以为一个App的“关于”部分简直就是鸡肋，有它也没人看，无它显得不完整。\n\n        而有水准有眼光的你，欢迎来到“急短信”的境界！这段拉杂的文字就是我们对你的致敬~\n\n        你知道吗？\n\n        靠谱的通知是一种严谨，急短信能帮您搞定琐碎事务！（牛皮总是要吹一吹滴~）\n\n        犀利的提醒是一种责任，他使你的工作指令有效到达。（收人薪水替人办事嘛）\n\n        不知你是行政高手or悲催小秘or老板助理or...无所谓了，反正你约饭约牌约那什么的都行...（等等，“那什么”是什么？亲，不要淘气，你懂的）\n\n        你会不会需要天天通知一堆人开会、发福利、收文件、写报告？\n        明明通知了，总有二13装13不知道\n        明明很着急，就有慢性子不回应你\n\n        当上述情况发生后，你是又恼又气，说不定老板还怪罪倾城倾国玉树临风人见人爱车见爆胎的你！\n\n        来吧，这货绝对是您行走职场江湖的必备利器。\n\n        其实我们很想多说几句，跟你聊聊苦逼程序猿和悲催美公之间的故事...\n        跟你聊聊软件现在的不足和我们未来的期望。\n        但美工（很苦逼的角色）老说版面不够，还说一般用户不喜欢滑屏看更多的文字...放上去没人看！\n        所以少说几句***以下省略2万字***\n        如果你都能看到这里了，我们对你的敬意又增加一分，感谢您的试用，欢迎批评指导！\n        （又是吹牛，英明神武的你一定识破了！）</string>
+    <string name="txt_cons">联系我们&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="txt_about">关于&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="txt_help">帮助&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bj"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/title_bj" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="查收情况"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/receiver_info_back"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:background="@drawable/sms_message_thread_back_bg"
+            android:clickable="true" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/receiver_info_ll_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/receiver_info_count"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/receiver_info_hint_bg"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="通知9人，已成功通知6人，剩余3人正在通知"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/receiver_info_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:lineSpacingExtra="4dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:scrollbars="vertical"
+                android:text="12月18日上午9点，请携带个人简历在浮光大厦3楼45F开会，请准时集结，不得有误。"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/receiver_info_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="12-15 11:30"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/receiver_info_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@null"
+        android:divider="@drawable/receiver_info_list_devider"
+        android:dividerHeight="3dp"
+        android:listSelector="#00000000" >
+    </ListView>
+
+</LinearLayout>

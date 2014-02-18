@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bj"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/seart_parent_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/search_bg_color"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/all_contact_search_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/search_edit_bg"
+            android:drawableLeft="@drawable/search_bg"
+            android:gravity="left|center_vertical"
+            android:drawablePadding="5dp"
+            android:hint="搜索或直接输入号码"
+            android:inputType="none"
+            android:maxLines="1"
+            android:paddingLeft="10dp" 
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/llParent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.50"
+        android:background="@null"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_Contacts"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:cacheColorHint="@null"
+            android:divider="#E0E0E0"
+            android:dividerHeight="1dp"
+            android:listSelector="@color/transparent" />
+
+        <TextView
+            android:id="@+id/tvLetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/letter_tv_bg"
+            android:gravity="center"
+            android:maxWidth="70dip"
+            android:minWidth="70dip"
+            android:padding="10dip"
+            android:textColor="@color/group_count_color"
+            android:textSize="52sp" >
+        </TextView>
+
+        <com.eteng.world.MyLetterView
+            android:id="@+id/myView"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right" >
+        </com.eteng.world.MyLetterView>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/sys_fasong_bj" >
+
+        <TextView
+            android:id="@+id/btn_SendSms"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selected_confirm_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="确  定"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

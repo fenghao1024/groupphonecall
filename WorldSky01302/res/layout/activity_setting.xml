@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/about_bg"
+	android:orientation="vertical"
+    tools:context=".SettingActivity" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bar_black" >
+
+        <ImageView
+            android:id="@+id/sms_send_group_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/setting_back_button_click"
+            android:onClick="back_button_click"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:orientation="vertical"
+        android:id="@+id/setting_widget_linearlayout"
+        >
+        
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginTop="30dp"
+	        android:text="请输入您的手机号："
+	        android:textSize="20sp" />
+	    
+	    <EditText
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+			android:numeric="integer"
+	        android:layout_marginTop="10dp"
+			android:id="@+id/phonenum_edit_text"
+	        android:ems="10"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        
+	         />
+
+
+    
+    </LinearLayout>
+    
+    	    <Button
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/check_ok_click" 
+	        android:layout_gravity="center_horizontal"
+	        android:layout_below="@id/setting_widget_linearlayout"
+	        
+	        android:onClick="phonenum_setting_button_click"
+	        />
+
+</LinearLayout>

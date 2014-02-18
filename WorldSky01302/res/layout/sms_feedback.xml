@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/feedback_bj"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bj"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/sms_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sms_back_bg" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="意见反馈"
+            android:textColor="#ffffff"
+            android:textSize="23sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/sms_tv_bg"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/editContent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="#FAF4EB"
+                android:ems="7"
+                android:gravity="left|top"
+                android:hint="请留下宝贵的意见或建议,我们将为您不断改进..."
+                android:textColor="#999999" >
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="您的联系方式"
+            android:textColor="#000000"
+            android:textSize="19sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:background="@drawable/sms_tv_bg">
+
+            <EditText
+                android:id="@+id/editContact"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="left|top"
+                android:background="#FAF4EB"
+                android:hint="邮箱、QQ号、手机号等，便于我们给您反馈"
+                android:maxLines="2"
+                android:textColor="#999999" >
+            </EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/sms_tijiao"
+            android:text="" />
+    </LinearLayout>
+
+</LinearLayout>

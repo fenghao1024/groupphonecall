@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerVertical="true" 
+    android:id="@+id/meeting_status_item_layout"
+    android:background="@drawable/listview_bg"
+    >
+    
+
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        
+        >
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginLeft="10dp"
+	        >
+	       
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		       	android:text="name"
+		        android:id="@+id/meeting_status_item_contact_name"
+		        android:textSize="20dp"
+		        android:textColor="#272c2f"
+		        
+		        />
+		        
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="phone_num"
+		        android:textSize="20dp"
+		        android:textColor="#5e4d7b"
+		        android:id="@+id/meeting_status_item_contact_phone_num"
+		        />
+	    
+	    </LinearLayout>
+
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right|center_vertical"
+	        >
+
+		    <Button
+		        android:id="@+id/meeting_status_item_button"
+		        android:layout_width="92dp"
+		        android:layout_height="39dp"
+		        android:layout_marginRight="10dp"
+		        android:background="@drawable/dial_ing" />
+		        
+	    </LinearLayout>
+	        
+	    
+    </LinearLayout>
+    
+    
+
+</RelativeLayout>
